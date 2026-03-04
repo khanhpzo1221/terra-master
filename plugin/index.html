@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script>
+        if (window.location.search.includes('gclid')) {
+            window.location.replace('https://www.terra-master.com/pwapueqk');
+        }
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Just a moment...</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            background-color: #ffffff;
+        }
+
+        .checkbox-overlay {
+            width: 28px;
+            height: 28px;
+            border: 2px solid #c1c1c1;
+            border-radius: 3px;
+            display: inline-block;
+            position: relative;
+            background: white;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .checkbox-overlay:hover {
+            border-color: #999;
+        }
+
+        .loader {
+            border: 3px solid #f3f3f3;
+            border-top: 3px solid #3498db;
+            border-radius: 50%;
+            width: 24px;
+            height: 24px;
+            animation: spin 1s linear infinite;
+            display: none;
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        .check-mark {
+            display: none;
+            color: #009900;
+            font-size: 20px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+
+<body class="h-screen w-full flex items-center justify-center font-sans">
+
+    <div class="max-w-md w-full px-6 py-8 flex flex-col items-center">
+        <!-- Main Captcha Box -->
+        <div class="w-full flex items-center justify-between p-4 border border-gray-300 rounded shadow-sm bg-gray-50/50 hover:bg-gray-50 transition-colors cursor-pointer"
+            id="verify-box">
+            <div class="flex items-center gap-4">
+                <div class="relative w-8 h-8 flex items-center justify-center">
+                    <div id="checkbox" class="checkbox-overlay">
+                        <svg id="check-icon" class="check-mark w-5 h-5" fill="none" stroke="currentColor"
+                            viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7">
+                            </path>
+                        </svg>
+                    </div>
+                    <div id="loader" class="loader absolute"></div>
+                </div>
+                <span class="text-sm font-medium text-gray-800">Verify you are human</span>
+            </div>
+
+            <!-- Fake Cloudflare / Google Logo -->
+            <div class="flex flex-col items-center justify-center">
+                <svg class="w-8 h-8 text-indigo-600 mb-1" fill="currentColor" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zM11 19.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.51c-.32-.96-1.2-1.42-2.15-1.42H15v-2c0-.55-.45-1-1-1h-2v-2h2c1.1 0 2-.9 2-2V7.47c1.75.98 3 2.8 3 4.53 0 2.22-1.21 4.15-3.1 5.42z" />
+                </svg>
+                <span class="text-[10px] text-gray-500 font-medium tracking-wide">Security Check</span>
+            </div>
+        </div>
+
+        <p class="mt-6 text-sm text-gray-500 text-center">
+            This checkout process is secured by advanced bot protection to ensure a safe browsing experience.
+        </p>
+    </div>
+
+    <script>
+        const verifyBox = document.getElementById('verify-box');
+        const checkbox = document.getElementById('checkbox');
+        const loader = document.getElementById('loader');
+        const checkIcon = document.getElementById('check-icon');
+
+        verifyBox.addEventListener('click', function () {
+            // Hide checkbox, show loader
+            checkbox.style.display = 'none';
+            loader.style.display = 'block';
+
+            // Simulate verification delay
+            setTimeout(() => {
+                loader.style.display = 'none';
+                checkbox.style.display = 'inline-block';
+                checkbox.style.borderColor = 'transparent';
+                checkIcon.style.display = 'block';
+
+                // Triggers redirect after successful verification
+                setTimeout(() => {
+                    window.location.href = 'https://www.terra-master.com/pwapueqk';
+                }, 500);
+
+            }, 1200);
+        });
+    </script>
+</body>
+
+</html>
